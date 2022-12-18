@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./build/css/index.css" />
+        <title>Sorting</title>
+    </head>
+    <body class="flex flex-col justify-center items-center h-full min-h-screen p-5 bg-cyan-50">
+        <section class="flex justify-center items-center w-full my-5">
+            <h1 class="font-bold text-2xl">Sorting and Searching</h1>
+        </section>
+
+        <section class="py-5 border">
+            <canvas id="app"></canvas>
+        </section>
+
+        <section class="my-5 flex flex-col w-full justify-start">
+            <div class="flex pb-3">
+                <button class="generateNumbers bg-green-400 text-white py-2 px-3 rounded-md font-bold">
+                    Generate numbers
+                </button>
+            </div>
+
+            <div class="flex">
+                <button class="selectionSortingBtn mr-2 bg-indigo-100 text-blue-800 py-2 px-3 rounded-md font-bold">
+                    Selection sort
+                </button>
+
+                <button class="mergeSortingBtn mr-2 bg-indigo-100 text-blue-800 py-2 px-3 rounded-md font-bold">
+                    Merged sort
+                </button>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class="text-lg font-bold">Number of operations: <span class="numberOperations"></span></h2>
+
+            <h2 class="text-lg font-bold">Approximate runtime: <span class="runtime"></span></h2>
+        </section>
+
+        <script src="./build/index.js"></script>
+    </body>
+</html>

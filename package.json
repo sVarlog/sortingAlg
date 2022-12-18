@@ -1,0 +1,22 @@
+{
+    "name": "ts_udemy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:build": "tsc -w",
+        "start:run": "nodemon build/index.js",
+        "start:tailwind": "npx tailwindcss -i ./src/css/input.css -o ./build/css/index.css --watch",
+        "start": "concurrently npm:start:*"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.2.2",
+        "nodemon": "^2.0.18"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.2.4"
+    }
+}
